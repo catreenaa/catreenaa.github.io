@@ -3,72 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Екатерина Джежора - Портфолио</title>
+    <title>Портфолио Екатерины Джежоры</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lora:ital@0;1&family=Cantarell&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>       
-        <h1>Екатерина Джежора</h1>
-        <p>Сайт-портфолио</p>
-        <img src="avatar.jpg" alt="Екатерина Джежора" class="profile-img">
-        <div class="contacts">
-            <p>Email: <a href="mailto:dgegora.ekaterina@gmail.com">dgegora.ekaterina@gmail.com</a></p>
-            <p>Telegram: <a href="https://t.me/catreenaa" target="_blank">@catreenaa</a></p>
-        </div>
-    </header>
+    
+    <div class="container">
+        <!-- Шапка -->
+        <header class="header">
+            <h1>Екатерина Джежора</h1>
+            <p class="subtitle">Сайт-портфолио</p>
+            <div class="header-content">
+                <div class="avatar-wrapper">
+                    <img src="avatar.jpg" alt="Аватар">
+                </div>
+                <section class="contacts">
+                    <h3>Контакты</h3>
+                    <div class="contact-info">
+                        <p>Gmail: <a href="mailto:dgegora.ekaterina@gmail.com">dgegora.ekaterina</a></p>
+                        <p>Telegram: <a href="https://t.me/catreenaa" target="_blank">@catreenaa</a></p>
+                    </div>
+                </section>
+            </div>
+        </header>
 
-    <section class="about">
-        <h2>Обо мне</h2>
-        <p>Привет! Я графический дизайнер и иллюстратор. Я работаю с различными форматами и люблю эксперименты.</p>
-    </section>
+        <!-- О себе -->
+        <section class="about">
+            <h2>Обо мне</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Начинающий графический дизайнер. Имею опыт работы с векторной и растровой графикой. Мне нравится рисовать иллюстрации как в электронном формате, так и в материале. 
 
-    <section class="skills">
-        <img src="images/shema2.png" alt="shema2">
-        <img src="images/shema22.jpg" alt="shema22">
-        <h2>Навыки</h2>
-        <ul>
-            <li>Figma</li>
-            <li>Procreate</li>
-            <li>Adobe Photoshop</li>
-            <li>Adobe Illustrator</li>
-        </ul>
-    </section>
+                        Также есть навыки в UX&UI-дизайне и инфографике.
+                        
+                        Во время обучения в вузе прошла следующие курсы: основы композиции, типографика, рисунок и спецграфика, цветоведение. .</p>
+                    <img src="изображение 7.jpg" alt="Изображение 7">
+                </div>
+                <img src="risunok1.jpg" alt="Рисунок">
+            </div>
+        </section>
 
-    <section class="portfolio">
-        <h2>Работы</h2>
-        <div class="work-gallery">
-            <img src="images/work1.jpg" alt="Работа 1">
-            <img src="images/work2.jpg" alt="Работа 2">
-            <img src="images/work3.jpg" alt="Работа 3">
-            <img src="images/work4.jpg" alt="Работа 4">
-            <img src="images/work5.jpg" alt="Работа 5">
-            <img src="images/work6.jpg" alt="Работа 6">
-            <img src="images/work7.jpg" alt="Работа 7">
-            <img src="images/work9.jpg" alt="Работа 9">
-            <img src="images/work10.jpg" alt="Работа 10">
-            <img src="images/work11.jpg" alt="Работа 11">
+        <!-- Навыки -->
+        <section class="skills">
+            <h2>Навыки</h2>
+            <div class="skills-list">
+                <img src="shema2.png" alt="Рабочие программы">
+                <img src="shema22.jpg" alt="Схема навыков">
+            </div>
+        </section>
 
-        </div>
-    </section>
+        <!-- Работы -->
+        <section class="works">
+            <h2>Работы</h2>
+            <div class="google-drive">
+                <p>Больше в <a href="https://drive.google.com" target="_blank">Google Drive</a></p>
+            </div>
+            <div class="works-gallery">
+                <img src="work1.jpg" alt="Работа 1">
+                <img src="work2.jpg" alt="Работа 2">
+                <img src="work3.jpg" alt="Работа 3">
+                <img src="work4.jpg" alt="Работа 4">
+                <img src="work5.jpg" alt="Работа 5">
+                <img src="work6.jpg" alt="Работа 6">
+                <img src="work7.jpg" alt="Работа 7">
+                <img src="work9.jpg" alt="Работа 8">
+                <img src="work10.jpg" alt="Работа 9">
+                <img src="work11.jpg" alt="Работа 10">
+            </div>
+        </section>
 
-    <section class="order">
-        <h2>Заказ проектов</h2>
-        <form action="#" method="POST">
-            <label for="name">Имя:</label>
-            <input type="text" id="name" name="name" required>
+        <!-- Заказ проектов -->
+        <section class="order">
+            <h2>Заказ проектов</h2>
+            <div class="order-content">
+                <div class="work-types">
+                    <p>Графический рисунок (иллюстрация) $$$</p>
+                    <p>Векторные изображения $$$</p>
+                    <p>Рисунки на материалах $$$</p>
+                    <p>Прототипы в Figma $$$</p>
+                </div>
+                <form class="form">
+                    <input type="text" placeholder="Фамилия Имя Отчество" required>
+                    <input type="tel" placeholder="+7(000)000-00-00" required>
+                    <input type="email" placeholder="email@gmail.com" required>
+                    <button type="submit">ОТПРАВИТЬ</button>
+                </form>
+            </div>
+        </section>
 
-            <label for="phone">Телефон:</label>
-            <input type="tel" id="phone" name="phone" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <button type="submit">Отправить</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>Санкт-Петербург, 2024</p>
-    </footer>
+        <footer>
+            <p>Санкт-Петербург, 2024</p>
+            <p>Email &nbsp;|&nbsp; Telegram &nbsp;|&nbsp; VKontakte</p>
+        </footer>
+    </div>
 </body>
 </html>
